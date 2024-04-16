@@ -1,0 +1,215 @@
+{
+  "project_info": {
+    "project_number": "891286113606",
+    "firebase_url": "https://thrill-cm-default-rtdb.firebaseio.com",
+    "project_id": "thrill-cm",
+    "storage_bucket": "thrill-cm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891286113606:android:0f6dfa0be195c49697a947",
+        "android_client_info": {
+          "package_name": "com.example.thrill_v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891286113606-2hgd6mqf5p90jv112mv7i5vrkc9pa0rm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thrill_v1",
+            "certificate_hash": "1859eb4545bb595ef66bffd3594ddb9126593901"
+          }
+        },
+        {
+          "client_id": "891286113606-co1265h794jdefua13slmqml6kl9vkv8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thrill_v1",
+            "certificate_hash": "5b13e2bac1738a04866f521befcc2a645527fbbc"
+          }
+        },
+        {
+          "client_id": "891286113606-i1i0foppuuc2atodu3mb5g5rd4nenane.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Jl73DqbFQoKewIorja9AqQ0naTdifnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891286113606-i1i0foppuuc2atodu3mb5g5rd4nenane.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "891286113606-mcu9oor2bd584pt6tuvmjrfjoooa7njr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.thrillV1.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891286113606:android:d3309a8a2fe18fd397a947",
+        "android_client_info": {
+          "package_name": "com.nyabwana.kula_area"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891286113606-i1i0foppuuc2atodu3mb5g5rd4nenane.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Jl73DqbFQoKewIorja9AqQ0naTdifnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891286113606-i1i0foppuuc2atodu3mb5g5rd4nenane.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "891286113606-mcu9oor2bd584pt6tuvmjrfjoooa7njr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.thrillV1.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891286113606:android:f69d0b5644e331ba97a947",
+        "android_client_info": {
+          "package_name": "com.nyabwana.vybe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891286113606-i1i0foppuuc2atodu3mb5g5rd4nenane.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Jl73DqbFQoKewIorja9AqQ0naTdifnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891286113606-i1i0foppuuc2atodu3mb5g5rd4nenane.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "891286113606-mcu9oor2bd584pt6tuvmjrfjoooa7njr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.thrillV1.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891286113606:android:00927b80b13a28e397a947",
+        "android_client_info": {
+          "package_name": "com.thrill.thrill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891286113606-t1g00lieornim2lldcc3ho8pof3ejmnj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thrill.thrill",
+            "certificate_hash": "9d26e3a6631c1eb133eb2d393ae55b43ff1fc64f"
+          }
+        },
+        {
+          "client_id": "891286113606-i1i0foppuuc2atodu3mb5g5rd4nenane.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Jl73DqbFQoKewIorja9AqQ0naTdifnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891286113606-i1i0foppuuc2atodu3mb5g5rd4nenane.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "891286113606-mcu9oor2bd584pt6tuvmjrfjoooa7njr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.thrillV1.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891286113606:android:9c9c01634d0d329897a947",
+        "android_client_info": {
+          "package_name": "com.yonko.table4two"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891286113606-i1i0foppuuc2atodu3mb5g5rd4nenane.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Jl73DqbFQoKewIorja9AqQ0naTdifnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891286113606-i1i0foppuuc2atodu3mb5g5rd4nenane.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "891286113606-mcu9oor2bd584pt6tuvmjrfjoooa7njr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.thrillV1.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
