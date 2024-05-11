@@ -1,5 +1,6 @@
 package com.nyabwana.kula_area;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,6 +38,14 @@ public class LoginTabFragment extends Fragment {
         email.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(300).start();
         password.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(500).start();
         loginButton.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(700).start();
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), DashboardActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         return root;

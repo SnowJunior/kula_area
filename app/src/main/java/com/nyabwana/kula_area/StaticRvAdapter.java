@@ -1,5 +1,6 @@
 package com.nyabwana.kula_area;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +30,7 @@ public class StaticRvAdapter extends RecyclerView.Adapter<StaticRvAdapter.Static
     }
 
     @Override
-    public void onBindViewHolder(@NonNull StaticRVViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull StaticRVViewHolder holder, @SuppressLint("RecyclerView") int position) {
         StaticRvModel currentItem = items.get(position);
         holder.imageView.setImageResource(currentItem.getImage());
         holder.textView.setText(currentItem.getText());
