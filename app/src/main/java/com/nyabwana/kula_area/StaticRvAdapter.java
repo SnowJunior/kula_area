@@ -44,9 +44,9 @@ notifyDataSetChanged();
         });
 
         if (row_index == position) {
-            holder.linearLayout.setBackgroundResource(R.drawable.static_rv_bg);
-        } else {
             holder.linearLayout.setBackgroundResource(R.drawable.static_rv_selected_bg);
+        } else {
+            holder.linearLayout.setBackgroundResource(R.drawable.static_rv_bg);
         }
     }
 
