@@ -1,5 +1,6 @@
 package com.nyabwana.kula_area;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.Toast;
@@ -18,12 +19,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class DashboardActivity extends AppCompatActivity {
+public class DashboardActivity extends AppCompatActivity implements UpdateRecyclerView{
 
-    private RecyclerView recyclerView;
+    private RecyclerView recyclerView, recyclerView2;
     private StaticRvAdapter staticRvAdapter;
 
-    List<DynamicRVModel> items = new ArrayList<>();
+    ArrayList<DynamicRVModel> items = new ArrayList<>();
     DynamicRVAdapter dynamicRVAdapter;
 
     @Override
@@ -33,61 +34,30 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         ArrayList<StaticRvModel> item = new ArrayList<>();
-        item.add(new StaticRvModel(R.drawable.ramen, "Cuisine"));
+        item.add(new StaticRvModel(R.drawable.ramen, "Fries"));
         item.add(new StaticRvModel(R.drawable.price, "Value"));
         item.add(new StaticRvModel(R.drawable.clock, "Time"));
         item.add(new StaticRvModel(R.drawable.location, "Area"));
 
         recyclerView = findViewById(R.id.recycle_1);
-        staticRvAdapter = new StaticRvAdapter(item);
+        staticRvAdapter = new StaticRvAdapter(item, DashboardActivity.this, this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false));
         recyclerView.setAdapter(staticRvAdapter);
 
-        items.add(new DynamicRVModel("Time"));
-        items.add(new DynamicRVModel("Time"));
-        items.add(new DynamicRVModel("Time"));
-        items.add(new DynamicRVModel("Time"));
-        items.add(new DynamicRVModel("Time"));
-        items.add(new DynamicRVModel("Time"));
-        items.add(new DynamicRVModel("Time"));
-        items.add(new DynamicRVModel("Time"));
-        items.add(new DynamicRVModel("Time"));
+        items = new ArrayList<>();
 
-        RecyclerView drv = findViewById(R.id.recycle_2);
-        drv.setLayoutManager(new LinearLayoutManager(this));
-        dynamicRVAdapter = new DynamicRVAdapter(drv, this,items);
-        drv.setAdapter(dynamicRVAdapter);
+        recyclerView2 = findViewById(R.id.recycle_2);
+        dynamicRVAdapter = new DynamicRVAdapter(items);
+        recyclerView2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        recyclerView2.setAdapter(dynamicRVAdapter);
 
-        dynamicRVAdapter.setLoadMore(new LoadMore() {
-            @Override
-            public void onLoadMore() {
-                if (items.size()<=10){
-                    items.add(null);
-                    dynamicRVAdapter.notifyItemInserted(items.size()-1);
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            items.remove(items.size()-1);
-                            dynamicRVAdapter.notifyItemRemoved(items.size());
+    }
 
-                            int index = items.size();
-                            int end = index+10;
-
-                            for (int i  = index; i < end; i++) {
-                                String name = UUID.randomUUID().toString();
-                                DynamicRVModel item = new DynamicRVModel(name);
-                                items.add(item);
-                            }
-                            dynamicRVAdapter.notifyDataSetChanged();
-                            dynamicRVAdapter.setLoaded();
-                        }
-                    }, 4000);
-                }
-                else {
-                    Toast.makeText(DashboardActivity.this, "Data Completed", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+    @Override
+    public void callback(int position, ArrayList<DynamicRVModel> items) {
+        dynamicRVAdapter = new DynamicRVAdapter(items);
+        dynamicRVAdapter.notifyDataSetChanged();
+        recyclerView2.setAdapter(dynamicRVAdapter);
 
     }
 }
