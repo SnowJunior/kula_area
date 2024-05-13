@@ -38,8 +38,8 @@ public class StaticRvAdapter extends RecyclerView.Adapter<StaticRvAdapter.Static
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-row_index = position;
-notifyDataSetChanged();
+                row_index = position;
+                notifyDataSetChanged();
             }
         });
 
