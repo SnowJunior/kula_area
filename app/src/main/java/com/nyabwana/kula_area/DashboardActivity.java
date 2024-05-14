@@ -1,7 +1,10 @@
 package com.nyabwana.kula_area;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -25,12 +28,24 @@ public class DashboardActivity extends AppCompatActivity {
 
     List<DynamicRVModel> items = new ArrayList<>();
     DynamicRVAdapter dynamicRVAdapter;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_dashboard);
+
+        imageView = findViewById(R.id.profile_icon);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashboardActivity.this, BookingActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         ArrayList<StaticRvModel> item = new ArrayList<>();
         item.add(new StaticRvModel(R.drawable.ramen, "Cuisine"));
