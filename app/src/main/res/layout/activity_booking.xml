@@ -130,8 +130,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskPickDate" />
 
-    <Spinner
-        android:id="@+id/spinner_people"
+    <EditText
+        android:id="@+id/people_capacity"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
@@ -158,7 +158,7 @@
         android:layout_marginLeft="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_people" />
+        app:layout_constraintTop_toBottomOf="@+id/people_capacity" />
 
     <EditText
         android:id="@+id/editOccassion"

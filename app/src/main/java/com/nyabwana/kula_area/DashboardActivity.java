@@ -41,7 +41,7 @@ public class DashboardActivity extends AppCompatActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DashboardActivity.this, BookingActivity.class);
+                Intent intent = new Intent(DashboardActivity.this, Booking.class);
                 startActivity(intent);
                 finish();
             }

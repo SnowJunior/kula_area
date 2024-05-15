@@ -4,6 +4,8 @@ import java.util.Date;
 
 public class BookingModel {
     String bookingId;
+
+    String status;
     String fullName;
     String occasion;
     String phoneNumber;
@@ -13,7 +15,7 @@ public class BookingModel {
 
     public BookingModel() {
     }
-    public BookingModel(String fullName, String occasion, String phoneNumber, String capacity, Date pickDate, String bookingId, String userId) {
+    public BookingModel(String fullName, String occasion, String phoneNumber, String capacity, Date pickDate, String bookingId, String userId, String status) {
         this.fullName = fullName;
         this.occasion = occasion;
         this.phoneNumber = phoneNumber;
@@ -21,6 +23,7 @@ public class BookingModel {
         this.pickDate = pickDate;
         this.bookingId = bookingId;
         this.userId = userId;
+        this.status = status;
     }
     public String getFullName() {
         return fullName;
@@ -73,5 +76,11 @@ public class BookingModel {
     }
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+    public String getStatus() {
+        return status;
+    }
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
