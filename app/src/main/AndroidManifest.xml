@@ -19,9 +19,6 @@
             android:name=".ViewBookings"
             android:exported="false" />
         <activity
-            android:name=".BookingActivity"
-            android:exported="false" />
-        <activity
             android:name=".ManagerActivity"
             android:exported="false" />
         <activity
