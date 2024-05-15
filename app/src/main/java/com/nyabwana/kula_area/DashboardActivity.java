@@ -43,7 +43,6 @@ public class DashboardActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(DashboardActivity.this, Booking.class);
                 startActivity(intent);
-                finish();
             }
         });
 
