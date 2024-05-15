@@ -13,12 +13,16 @@
         android:theme="@style/Theme.Kula_area"
         tools:targetApi="31">
         <activity
+            android:name=".ReviewsActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".ViewBookings"
             android:exported="false" />
-        <activity android:name=".Booking"
+        <activity
+            android:name=".Booking"
             android:exported="false" />
         <activity
             android:name=".ManagerActivity"
