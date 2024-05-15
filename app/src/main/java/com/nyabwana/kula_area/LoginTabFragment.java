@@ -40,9 +40,6 @@ public class LoginTabFragment extends Fragment {
         email = root.findViewById(R.id.login_email);
         password = root.findViewById(R.id.login_password);
         loginButton = root.findViewById(R.id.login_button);
-        mAuth = FirebaseAuth.getInstance();
-        firebaseFirestore = FirebaseFirestore.getInstance();
-
 
         email.setTranslationX(800);
         password.setTranslationX(800);
@@ -60,12 +57,12 @@ public class LoginTabFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 loginUser();
+                Intent intent = new Intent(getActivity(), DashboardActivity.class);
+                startActivity(intent);
+                getActivity().getSupportFragmentManager().beginTransaction().remove(LoginTabFragment.this).commit();
             }
         });
-
-
         return root;
-
     }
 
     private void loginUser() {
