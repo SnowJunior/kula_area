@@ -4,8 +4,8 @@
     <item android:drawable="@color/fuchsia_rose" />
     <item>
         <gradient
-            android:startColor="@color/background_start"
-            android:endColor="@color/background_end"
+            android:startColor="@color/primaryColor"
+            android:endColor="@color/primaryAccent"
             android:angle="45" />
     </item>
 
