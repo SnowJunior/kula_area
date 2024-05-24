@@ -70,19 +70,6 @@
             app:layout_constraintTop_toTopOf="@+id/greeting_text"
             app:layout_constraintVertical_bias="0.0" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Book"
-            android:id="@+id/bookButton"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.311"
-            app:layout_constraintStart_toEndOf="@+id/displayName"
-            app:layout_constraintTop_toBottomOf="@+id/notification_icon"
-            app:layout_constraintVertical_bias="0.0" />
-
         <EditText
             android:id="@+id/search"
             android:layout_width="0dp"
@@ -130,7 +117,7 @@
             app:layout_constraintTop_toBottomOf="@+id/search" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycle_2"
+            android:id="@+id/restaurant_recycler_item"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -141,9 +128,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recycle_1" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurant_recycler_item"
+            app:menu="@menu/bottom_navigation" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 </ScrollView>

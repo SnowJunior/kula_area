@@ -34,6 +34,7 @@ public class ProfileActivity extends AppCompatActivity {
         profileName = findViewById(R.id.user_name);
         profileMobile = findViewById(R.id.user_number);
         profileBackButton = findViewById(R.id.back_button);
+        fetchUserDetails();
 
         profileBackButton.setOnClickListener(new View.OnClickListener() {
             @Override

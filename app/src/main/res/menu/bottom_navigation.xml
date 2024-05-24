@@ -7,9 +7,14 @@
         android:title="Home"
         />
     <item
-        android:id="@+id/bottom_profile"
-        android:icon="@drawable/baseline_accessibility_24"
-        android:title="Profile"
+        android:id="@+id/bottom_booking"
+        android:icon="@drawable/baseline_bookmark_add_24"
+        android:title="Booking"
+        />
+    <item
+        android:id="@+id/bottom_review"
+        android:icon="@drawable/baseline_edit_24"
+        android:title="Review"
         />
 
 </menu>

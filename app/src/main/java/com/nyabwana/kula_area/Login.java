@@ -112,6 +112,7 @@ public class Login extends AppCompatActivity {
         } else if ("user".equals(role)) {
             Intent intent = new Intent(Login.this, DashboardActivity.class);
             startActivity(intent);
+            finish();
         }
     }
 }

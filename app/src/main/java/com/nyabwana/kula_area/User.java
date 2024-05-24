@@ -17,6 +17,10 @@ public class User {
         this.password_confirm = password_confirm;
     }
 
+    public User() {
+
+    }
+
 
     public String getUserId() {
         return userId;
